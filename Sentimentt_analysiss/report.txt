@@ -1,0 +1,56 @@
+Report: Sentiment Analysis of Movie Reviews
+Approach
+
+The goal of this task was to classify IMDb movie reviews as positive or negative using machine learning. I followed these steps:
+
+Data Preprocessing
+
+Loaded the IMDb dataset containing 50,000 labeled reviews.
+
+Performed text cleaning: lowercasing, removing punctuation, numbers, and stopwords.
+
+Applied tokenization and converted reviews into numerical features using TF-IDF vectorization.
+
+Model Training
+
+Trained three machine learning models: Logistic Regression, Naïve Bayes, and SVM.
+
+Used an 80-20 train-test split.
+
+Tuned hyperparameters where necessary for better performance.
+
+Evaluation
+
+Evaluated models using accuracy, precision, recall, and F1-score.
+
+Logistic Regression and SVM performed the best, with accuracy around 88–90%.
+
+Naïve Bayes was faster but slightly less accurate.
+
+Optional Extension
+
+Implemented a small interface (command-line based) to input a custom review and get its predicted sentiment.
+
+Challenges Faced
+
+Handling imbalanced words and noisy text (e.g., slang, emojis, mixed casing).
+
+Deciding between Bag-of-Words and TF-IDF representations. TF-IDF performed better in capturing word importance.
+
+Ensuring models generalize well without overfitting.
+
+Key Learnings
+
+Text preprocessing is crucial for achieving good performance in NLP tasks.
+
+Logistic Regression and SVM are highly effective for text classification.
+
+F1-score is a better metric than accuracy when evaluating models with potential class imbalance.
+
+Building a simple interactive interface makes the model more practical and user-friendly.
+
+Model Performance Summary
+Model	                 Accuracy	              F1-Score
+Logistic Regression	     89%	                    0.89
+SVM	                     90%	                    0.90
+Naïve Bayes            	 85%	                    0.85
